@@ -45,12 +45,15 @@ let request = async (url) => {
                 let row = document.createElement('tr')
                 let idROW = document.createElement('td')
                 let yearrow = document.createElement('td')
+                let tittle = document.createElement("td")
                 
                 idROW.innerText = item.id
                 yearrow.innerText = item.Year
+                tittle.innerText = item.Title
 
                 row.appendChild(idROW)
                 row.appendChild(yearrow)
+                row.appendChild(tittle)
  
                 tablebodyDta.appendChild(row)
 
